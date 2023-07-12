@@ -1,0 +1,148 @@
+body,
+ul,
+li {
+    font-family: comic sans MS;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(225, 222, 199);
+}
+
+header {
+    background-color: rgb(225, 222, 199);
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.title {
+    color: rgb(24, 22, 22);
+    width: 100%;
+    background-color: rgba(197, 221, 197, 0.4);
+    display: block;
+    position: absolute;
+    padding: 2px 0px;
+    z-index: 1;
+    font-size: 20px;
+}
+
+.banner {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 0%;
+    background-image: url(https://img.elo7.com.br/product/zoom/24D0CB9/papel-de-parede-infantil-arvore-galho-zoo-safari-bebe-gg645-adesivo-animais.jpg);
+}
+
+.newItem {
+    background-color: rgb(225, 222, 199);
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 1;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #980101;
+    border-radius: 4px;
+}
+.newItem:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#newInput {
+    margin: 0;
+    border: 1px solid rgb(35, 32, 24);
+    width: 25%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#newSize {
+    margin: 0;
+    border: 1px solid rgb(35, 32, 24);
+    width: 8%;
+    padding: 10px;
+    font-size: 16px;
+}
+#newQuantity {
+    margin: 0;
+    border: 1px solid rgb(35, 32, 24);
+    width: 8%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* campo adicionar de cor verde */
+.addBtn {
+    padding: 9px 10px;
+    background-color: rgb(104, 151, 38);
+    color: rgb(32, 4, 4);
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+/* Transição do campo adicionar para cor amarelo*/
+.addBtn:hover {
+    background-color: #ddbc16;
+    color: rgb(6, 6, 6);
+}
+
+.items {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Realçando o 'x' para cor vermelho */
+.close:hover {
+    color: #f44336;
+    font-weight: bolder;
+}
+
+/* Tabela com itens inseridos */
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 10px;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+table{
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(6, 85, 6, 0.2);
+}
+
+td:nth-child(1) {
+    width: 80%;
+}
+
+td:nth-child(2), td:nth-child(3) {
+    text-align: center;
+    vertical-align: middle;
+}
+
+tr:hover {
+    background: rgb(200, 199, 199);
+}
+
